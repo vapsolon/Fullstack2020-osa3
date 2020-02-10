@@ -1,0 +1,34 @@
+{
+  "name": "fullstack2020-p3-osa3",
+  "version": "1.0.0",
+  "description": "Fullstack2020 osan 3 palautus",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "git push heroku master",
+    "deploy:full": "git add * && git commit -m autobuild && npm run deploy",
+    "logs:prod": "heroku logs --tail"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vapsolon/Fullstack2020-p3-osa3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vapsolon/Fullstack2020-p3-osa3/issues"
+  },
+  "homepage": "https://github.com/vapsolon/Fullstack2020-p3-osa3#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.11",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
